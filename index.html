@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mood-Based Music Suggestor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Mood-Based Music Suggestor</h1>
+
+    <label for="mood">Choose your mood:</label>
+    <select id="mood">
+      <option value="">--Select Mood--</option>
+      <option value="happy">Happy</option>
+      <option value="sad">Sad</option>
+      <option value="romantic">Romantic</option>
+      <option value="angry">Angry</option>
+      <option value="energetic">Energetic</option>
+    </select>
+
+    <button onclick="suggestSong()">Get Song Suggestion</button>
+    <button onclick="resetApp()">Reset</button>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <div id="song-suggestion"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

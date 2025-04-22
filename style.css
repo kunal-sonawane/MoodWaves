@@ -1,0 +1,96 @@
+/* Modern Font and Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #f5f5f5;
+  margin: 0;
+  padding: 40px 20px;
+  transition: background 0.5s ease;
+}
+
+/* Dark Mode */
+.dark {
+  background: linear-gradient(135deg, #1e1e2f, #25273c);
+  color: #e0e0e0;
+}
+
+.dark .container {
+  background: rgba(20, 20, 30, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+/* Glassmorphism Container */
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+/* Headings */
+.container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+/* Inputs & Buttons */
+select, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* Mood Dropdown */
+select {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #000;
+  font-weight: bold;
+}
+
+select option {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #3b9c86, #144c87);
+  transform: scale(1.03);
+}
+
+/* Song Suggestion Box */
+#song-suggestion {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+/* Song Link */
+.song-link {
+  color: #00f2ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.song-link:hover {
+  text-decoration: underline;
+}
